@@ -3,12 +3,15 @@ const Schema = mongoose.Schema;
 
 const recipeSchema = new Schema({
   // TODO: write the schema
-  title:"",
-  level:["Easy Peasy", "Amateur Chef", "UltraPro Chef"],
-  ingredients:[""],
-  cuisine:"",
-  
-
+  title:{ type: String },
+  level:{ type: String },
+  ingredients:[String],
+  cuisine: { type: String },,
+  dishType:{ type: String },,
+  image: { type: String , default: 'https://images.media-allrecipes.com/images/75131.jpg'},
+  duration: { type: Number },,
+  creator: { type: String },
+  created: { type: Date , default: "today"},;
 });
 
 const Recipe = mongoose.model('Recipe', recipeSchema);
