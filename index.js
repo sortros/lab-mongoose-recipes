@@ -25,3 +25,9 @@ mongoose
   .catch(error => {
     console.error('Error connecting to the database', error);
   });
+
+  /*  Recipe.create ??
+      Recipees.insertMany(arr, function(error, docs) {}); ??
+      Recipees.findOneAndUpdate(conditions, update)  ???
+      Recipee.deleteOne({ name: 'Carrot cake' });    ???
+  */
